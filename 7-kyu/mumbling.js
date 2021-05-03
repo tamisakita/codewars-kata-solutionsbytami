@@ -8,14 +8,14 @@
 // The parameter of accum is a string which includes only letters from a..z and A..Z.
 
 function accum(s) {
-	let arr = s.split('');
-  let newString = '';
+  let newString = [];
+  let letters = s.split('');
 
-  for(let i = 0; i < arr.length; i++) {
-    console.log(arr)
+  for (let i = 0; i < letters.length; i++) {
+    newString.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
   }
 
-  console.log(arr)
+  return newString.join('-');
 }
 
-console.log("abcd");
+console.log(accum("abcd"));
