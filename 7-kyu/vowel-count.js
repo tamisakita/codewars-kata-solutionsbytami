@@ -6,7 +6,7 @@
 
 function getCount(str) {
   let vowelsCount = 0;
-  let array = str.split('');
+  let array = str.toString.split('');
 
   for (let i = 0; i < array.length; i++) {
     if(array[i] == 'a' || array[i] == 'e' || array[i] == 'i' || array[i] == 'o' || array[i] == 'u') {

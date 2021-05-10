@@ -14,7 +14,10 @@
 function highAndLow(numbers){
   let array = numbers.split(' ');
 
-  console.log(array)
+  let max = Math.max( ...array);
+  let min = Math.min( ...array);
+
+  return `${max} ${min}`;
 }
 
 console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
